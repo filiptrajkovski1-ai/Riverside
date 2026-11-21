@@ -4,7 +4,7 @@ do $$
 declare first_id uuid; second_id uuid;
 begin
  select id into first_id from auth.users where lower(email)=lower('filip.trajkovski1@gmail.com');
- select id into second_id from auth.users where lower(email)=lower('COLLEAGUE_EMAIL@example.com');
+ select id into second_id from auth.users where lower(email)=lower('angptrv1992@gmail.com');
  if first_id is null or second_id is null or first_id=second_id then
   raise exception 'Внеси две различни постоечки е-пошти од Authentication > Users.';
  end if;
